@@ -9,12 +9,11 @@
    align-items: center;
 }
 
-/* CSS cho phần tử lấp lánh */
 .sparkle {
    position: absolute;
    width: 20px;
    height: 20px;
-   background-color: rgba(255, 255, 255, 0.7); /* Độ trong suốt 0.7 */
+   background-color: rgba(255, 255, 255, 0.7); 
    border-radius: 50%;
    animation: sparkleAnimation 2s linear infinite;
 }
@@ -81,17 +80,6 @@
    height: 400px;
    animation: zoomAndRotate 2s ease-in-out forwards;
    opacity: 0; /* Bắt đầu với độ mờ */
-}
-
-@keyframes zoomAndRotate {
-   from {
-       transform: scale(0) rotate(0deg); /* Bắt đầu với kích thước không và không xoay */
-       opacity: 0; /* Bắt đầu với độ mờ */
-   }
-   to {
-       transform: scale(1) rotate(360deg); /* Kết thúc với kích thước ban đầu và xoay 360 độ */
-       opacity: 1; /* Hiển thị hoàn toàn */
-   }
 }
 
 @keyframes flipBook {
